@@ -9,7 +9,7 @@ Ejercicios de la asignatura programación de **1º Desarrollo de aplicaciones
 * Git y GitHub :octocat:
 * Lenguaje Java :coffee: : variables, bucles, POO, etc.
 
-## Bibliografía :books:
+## :books: Bibliografía
 
 <img src="Ejercicios/Imagenes/hero.jpeg" width="320px">
 
@@ -17,5 +17,5 @@ Ejercicios de la asignatura programación de **1º Desarrollo de aplicaciones
 
 ## Enlaces de interés
 
-* [Página oficial del IES Campanillas](http://iescampanillas.com/)
+* [:school: Página oficial del IES Campanillas](http://iescampanillas.com/)
 * [Guía de la asignatura de programación](https://github.com/LuisJoseSanchez/programacion)
