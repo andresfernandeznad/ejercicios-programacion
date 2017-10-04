@@ -1,0 +1,8 @@
+# Ficheros compilados de java
+*.class
+
+# Copias de seguridad
+
+*.bak
+
+Ejercicios/Imagenes/
