@@ -11,4 +11,4 @@ Ejercicios de la asignatura programación de **1º Desarrollo de aplicaciones
 
 ## Bibliografía
 
-![Aprende Java con Ejercicios](Ejercicios/Imagenes/hero.jpeg)
+<img src="Ejercicios/Imagenes/hero.jpeg" width="320px">
