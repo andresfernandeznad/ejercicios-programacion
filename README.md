@@ -9,6 +9,32 @@ Ejercicios de la asignatura programación de **1º Desarrollo de aplicaciones
 * Git y GitHub :octocat:
 * Lenguaje Java :coffee: : variables, bucles, POO, etc.
 
+## "Hola Mundo" en Java
+
+A continuación se muestra el programa "Hola Mundo" escrito en lenguaje Java:
+
+```java
+//Hola mundo github
+
+//@author Andrés Fernández Nadales
+
+public class HolaMundo {
+  public static void main(String[] args) {
+    System.out.print("Hola mundo");
+  }
+}
+```
+Para compilar el programa teclea 
+
+```console
+javac HolaMundo.java
+```
+Para ejecutar el programa usamos el comando `java`:
+
+```console
+java HolaMundo
+```
+
 ## :books: Bibliografía
 
 <img src="Ejercicios/Imagenes/hero.jpeg" width="320px">
