@@ -1,2 +1,4 @@
-# ejercicios-programacion
-Ejercicios de la asignatura programación 1º Desarrollo de aplicaciones multiplataforma.
+# Ejercicios de Programacion de 1º DAM
+
+Ejercicios de la asignatura programación de 1º Desarrollo de aplicaciones
+ multiplataforma del IES Campanillas.
