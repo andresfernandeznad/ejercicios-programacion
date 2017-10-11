@@ -9,21 +9,21 @@ public class Ejercicio01 {
     System.out.print("Introduzca el día de la semana, para mostrar la ");
     System.out.println("primera asginatura de ese dia: ");
     Scanner s = new Scanner(System.in);
-    String dia = s.nextLine();
+    String dia = s.nextLine().toLowerCase();
     switch (dia) {
-      case "Lunes":
+      case "lunes":
         System.out.println("A primera hora tienes programación");
         break;
-      case "Martes":
+      case "martes":
         System.out.println("A primera hora tienes Sistemas Informáticos");
         break;
-      case "Miercoles":
+      case "miercoles":
         System.out.println("A primera hora tienes programación");
         break;
-      case "Jueves":
+      case "jueves":
         System.out.println("A primera hora tienes entornos de desarrollo");
         break;
-      case "Viernes":
+      case "viernes":
         System.out.println("A primera hora tienes Sistemas informáticos");
         break;
       default:
