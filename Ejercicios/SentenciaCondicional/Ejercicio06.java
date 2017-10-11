@@ -1,4 +1,4 @@
-//Ejercicio04 de Sentencia Condicional
+//Ejercicio06 de Sentencia Condicional
 
 //@author Andrés Fernández Nadales
 
