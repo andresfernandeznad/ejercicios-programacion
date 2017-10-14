@@ -13,8 +13,20 @@ public class Ejercicio22 {
     int hora = s.nextInt();
     int minuto = s.nextInt();
     if (dia.equals("lunes")) {
-      if (hora < 15) {
-        hora = (15 - hora) + (24*4);
-        hora = hora * 60;
-        
-        
+      int horasTotal = (4 * 24 * hora * 60);
+      System.out.print("Quedan: " + (horasTotal + minuto) + "minutos");
+    } else if (dia.equals("martes")) {
+      int horasTotal = (4 * 24 * hora * 60);
+      System.out.print("Quedan: " + (horasTotal + minuto) + "minutos");
+    } else if (dia.equals("miercoles")) {
+      int horasTotal = (3 * 24 * hora * 60);
+      System.out.print("Quedan: " + (horasTotal + minuto) + "minutos");
+    } else if (dia.equals("jueves")) {
+      int horasTotal = (2 * 24 * hora * 60);
+      System.out.print("Quedan: " + (horasTotal + minuto) + "minutos");
+    } else if (dia.equals("viernes")) {
+      int horasTotal = (1 * 24 * hora * 60);
+      System.out.print("Quedan: " + (horasTotal + minuto) + "minutos");
+    }
+  }
+}
