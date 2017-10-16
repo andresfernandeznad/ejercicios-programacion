@@ -16,7 +16,7 @@ public class Ejercicio22 {
       System.out.print("Ya estás en el fin de semana.");
     } else if (dia.equals("viernes")) {
       int horasTotal = (hora * 60);
-      System.out.print("Quedan: " + (horasTotal + minuto + (horasTotal + minuto) - 15*60) + " minutos");
+      System.out.print("Quedan: " + ((horasTotal + minuto) - 15*60) + " minutos");
     }
     if (dia.equals("lunes")) {
       int horasTotal = ((4 * 24 + hora) * 60);

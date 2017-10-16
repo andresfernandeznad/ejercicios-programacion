@@ -42,7 +42,7 @@ public class Ejercicio09 {
     }
     if ((a != 0)&&(b != 0)&&(c !=0)&&((b*b) < (4*a*c))) {
     x = (-b + Math.sqrt((b*b)-(4*a*c)))/(2*a);
-    System.out.print("El resultado de x es = " + x);
+    System.out.printf("El resultado de x es =%f ", x);
     x = (-b - Math.sqrt((b*b)-(4*a*c)))/(2*a);
     System.out.print(" y x = " + x);
     }
