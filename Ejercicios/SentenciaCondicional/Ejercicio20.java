@@ -13,9 +13,13 @@ public class Ejercicio20 {
       System.out.print("Introduce un número válido");
     }
     if (numero <= 9) {
-      System.out.print("Nu puede ser capicúo porque es un número sólo.");
+      System.out.print("No puede ser capicúo porque es un número sólo.");
     } else if (numero <= 99) {
-      System.out.print("No puede ser capicúo porque son dos números.");
+        if ((numero/10)==(numero%10)) {
+        System.out.print("Su numero es capicúo");
+        } else {
+        System.out.print("Su número no es capicúo.");
+        }
     } else if (numero <= 999) {
       if ((numero/100)==(numero%10)) {
         System.out.print("Su número es capicúo.");
