@@ -80,8 +80,5 @@ public class Ejercicio16 {
       System.out.print("aconsejamos que indagues un poco más y averigües ");
       System.out.print("que es lo que está pasando por su cabeza.");
     }
-    if ((contador > 30)||(contador < 0)) {
-      System.out.print("Se han introducido datos no válidos.");
-    }
   }
 }
