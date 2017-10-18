@@ -13,7 +13,8 @@ public class Ejercicio15 {
     int exponente = s.nextInt();
     int potencia = 1;
     for (int i = 1; i <= exponente; i++){
-      System.out.print(base + "^" + i + ", ");
+      potencia = potencia * base;
+      System.out.print(base + "^" + i + "= " + potencia + ", ");
     }
   }
 }
