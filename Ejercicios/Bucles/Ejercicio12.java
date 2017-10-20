@@ -9,17 +9,18 @@ public class Ejercicio12 {
     Scanner s = new Scanner(System.in);
     System.out.print("Introduzca desde teclado el numero de iteraciones: ");
     int n = s.nextInt();
-    int suma;
+    int suma = 0;
     int i = 0;
     int x = 0;
     int y = 1;
-    System.out.print("0, ");
-    while (i < n) {
-      suma = x + y; 
-      System.out.print(suma + ", ");
+    suma = x + y;
+    int suma1 = 0;
+    System.out.print("0, 1, 1, ");
+    while (i < n - 3) {
+      suma1 = y + suma; // suma = suma + x 
+      System.out.print(suma1 + ", ");
       y = suma;
-      x = y;
-      suma = 0;
+      suma = suma1;
       ++i;
     }
   }
