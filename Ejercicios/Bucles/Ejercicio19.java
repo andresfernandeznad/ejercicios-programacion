@@ -11,9 +11,9 @@ public class Ejercicio19 {
     String caracter = s.next();
     System.out.print("Introduce la altura que quiere que tenga la pirámide: ");
     int altura = s.nextInt();
-    for (int j = 0; j < altura; ++j) {
+    for (int i = 1; i <= altura; ++i) {
       System.out.println();
-      for (int i = -1; i < j; ++i) {
+      for (int j = 0; j < i; ++j) {
         System.out.print(caracter);
       }
     }
