@@ -13,7 +13,7 @@ public class Ejercicio19 {
     int altura = s.nextInt();
     for (int j = 0; j < altura; ++j) {
       System.out.println();
-      for (int i = 0; i < altura; ++i) {
+      for (int i = -1; i < j; ++i) {
         System.out.print(caracter);
       }
     }
