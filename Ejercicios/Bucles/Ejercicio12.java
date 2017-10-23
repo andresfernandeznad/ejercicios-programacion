@@ -17,7 +17,7 @@ public class Ejercicio12 {
     int suma1 = 0;
     System.out.print("0, 1, 1, ");
     while (i < n - 3) {
-      suma1 = y + suma; // suma = suma + x 
+      suma1 = y + suma;
       System.out.print(suma1 + ", ");
       y = suma;
       suma = suma1;
