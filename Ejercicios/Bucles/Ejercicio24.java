@@ -13,12 +13,13 @@ public class Ejercicio24 {
     int alturaFinal = s.nextInt();
     int espacios = alturaFinal - 1;
     int ancho = 1;
+    int ancho2 = alturaFinal - 2;
     for (int i = 1; i <= alturaFinal; ++i) {
       System.out.println();
       for (int j = 1; j <= espacios; ++j) {
         System.out.print(" ");
       }
-      for (int x = 1; x <= ancho; ++x) {
+      for (int x = 1; x <= (ancho/2)+1; ++x) {
         System.out.print(x);
       }
       --espacios;
