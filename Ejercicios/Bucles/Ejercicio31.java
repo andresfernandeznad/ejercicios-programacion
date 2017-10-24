@@ -12,8 +12,8 @@ public class Ejercicio31 {
     System.out.print("Introduce la altura de la L: ");
     int altura = s.nextInt();
     int horizontal = ((altura/2) + 1);
-    int i = 0;
-    while (i < altura - 1) {
+    int i = 1;
+    while (i < altura) {
       System.out.println("*");
       ++i;
     }
