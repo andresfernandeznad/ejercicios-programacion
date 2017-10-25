@@ -14,15 +14,19 @@ public class Ejercicio32 {
     System.out.print("Dígitos pares: ");
     int resto = 0;
     int suma = 0;
+    int volteado = 0;
+    int sumaVolteado = 0;
     while (numero > 0) {
       resto = numero % 10;
       numero /= 10;
       if (((resto)%2) == 0) {
-        System.out.print(resto);
+        sumaVolteado += resto;
+        sumaVolteado *= 10;
+        
         suma += resto;
       }
     }
-    System.out.println();
+    System.out.println("Su número volteado los pares es: " + sumaVolteado);
     System.out.print("Su suma es: " + suma);
   }
 }

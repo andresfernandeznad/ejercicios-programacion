@@ -16,19 +16,22 @@ public class Ejercicio35 {
       altura = s.nextInt();
       int x = 0;
     }
-    for (int i = 0; i < altura; ++i) {
+    for (int i = 1; i <= altura; ++i) {
       System.out.println();
-      for (int j = 0; j < altura; ++j) {
-        if ((i < altura - 1)&&(((j==0)||(j==altura - 1)))) {
-          System.out.print("*");
-        }
-        if ((j > 0)&&(j <= altura - 2)) {
+      for (int j = 1; j <= altura; ++j) {
+        if ((j < i)&&(i > 1)) {
           System.out.print(" ");
         }
-        if ((i == altura - 1)&&((j > 0)&&(j < altura - 1))) {
+        if (j==i) {
+          System.out.print("*");
+        }
+        if ((j > i)&&(j < altura)) {
+          System.out.print(" ");
+        }
+        if ((j == altura)&&(i == 1)) {
           System.out.print("*");
         }
       }
     }
-  } 
+  }
 }
