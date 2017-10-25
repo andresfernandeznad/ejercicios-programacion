@@ -15,9 +15,15 @@ public class Ejercicio26 {
     int digito = s.nextInt();
     int resto;
     int i = 0;
+    int volteado = 0;
+    int restoVolteado = 0;
     while (numero > 0) {
-      resto = numero % 10;
-      numero = numero / 10;
+      volteado = (numero % 10) + (volteado * 10);
+      numero /= 10;
+    }
+    while (volteado > 0) {
+      resto = volteado % 10;
+      volteado = volteado / 10;
       ++i;
       if (resto == digito) {
         System.out.print("Su número está en la posición: " + i);
