@@ -26,6 +26,7 @@ public class Ejercicio32 {
         suma += resto;
       }
     }
+    sumaVolteado /= 10;
     System.out.println("Su número volteado los pares es: " + sumaVolteado);
     System.out.print("Su suma es: " + suma);
   }

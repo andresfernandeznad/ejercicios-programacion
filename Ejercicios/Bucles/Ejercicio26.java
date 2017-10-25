@@ -16,7 +16,6 @@ public class Ejercicio26 {
     int resto;
     int i = 0;
     int volteado = 0;
-    int restoVolteado = 0;
     while (numero > 0) {
       volteado = (numero % 10) + (volteado * 10);
       numero /= 10;
