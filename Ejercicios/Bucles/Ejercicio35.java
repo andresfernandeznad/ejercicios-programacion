@@ -11,25 +11,62 @@ public class Ejercicio35 {
     Scanner s = new Scanner(System.in);
     System.out.print("Introduzca la altura: ");
     int altura = s.nextInt();
-    int espacios = altura - 2;
-    int ancho = 0;
     while ((altura < 3)||((altura%2)==0)) {
       System.out.println("Introduzca la altura: ");
       altura = s.nextInt();
       int x = 0;
     }
-    for (int i = 0; i < altura; ++i) {
-      System.out.println();
-      for (int j = 0; j < espacios; ++j) {
-        if ((j < altura)&&(j > 0)) {
+
+    int espaciosDelante = 0; //Espacios por la izquierda
+    int espaciosInterior = altura - 2;
+    int alturaInferior = altura / 2;
+    
+    //Parte superior en forma de v
+    int alturaSuperior = (altura / 2) + 1;
+    
+    
+    for (int i = 0; i < alturaSuperior; ++i) {
+      for (int j = 0; j < espaciosDelante; ++j) {
+        System.out.print(" ");
+      }
+      System.out.print("*");
+      
+      
+      
+      if (i < alturaSuperior - 1) {
+        //Espacios interiores
+        for (int x = 0; x < espaciosInterior; ++x) {
           System.out.print(" ");
         }
+        System.out.println("*");
       }
-      for (int x = 0; x <= ancho; ++x) {
-          System.out.print("*");
-      }
-      espacios -= 2;
-      ancho += 1;
+      
+      espaciosDelante++;
+      espaciosInterior -= 2;
     }
+    System.out.println();
+    
+    espaciosDelante -= 2;
+    espaciosInterior = 1;
+    
+    for (int i = 0; i < alturaInferior; ++i) {
+      for (int j = 0; j < espaciosDelante; ++j) {
+        System.out.print(" ");
+      }
+      System.out.print("*");
+      
+      
+      
+      
+      for (int x = 0; x < espaciosInterior; ++x) {
+        System.out.print(" ");
+      }
+      System.out.println("*");
+      
+      
+      espaciosDelante--;
+      espaciosInterior += 2;
+    }
+    
   }
 }

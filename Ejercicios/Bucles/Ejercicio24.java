@@ -22,9 +22,7 @@ public class Ejercicio24 {
       for (j = 1; j <= (ancho/2)+1; ++j) {
         System.out.print(j);
       }
-      for (j = alturaFinal; j > 0; --j) {
-        System.out.print(j);
-      }
+      
       --espacios;
       ancho += 2;
     }
