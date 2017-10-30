@@ -40,7 +40,7 @@ public class Ejercicio40 {
       --espacioExterior;
       espacioInterior += 2;
     }
-    
+   
     //Pintar parte inferior
     int alturaInferior = altura / 2;
     espacioExterior = 1;
