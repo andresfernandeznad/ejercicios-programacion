@@ -10,12 +10,13 @@ public class Ejercicio18 {
   public static void main(String[] args){
     Scanner s = new Scanner(System.in);
     int color = (int)(Math.random()*6);
-    int aux = color;
     int i = 0;
-    while ((aux == color) && (i < 3)) {
+    int aux = color;
+    while (i < 3) {
       color = (int)(Math.random()*6);
+      
       if (aux !=  color) {
-        switch (color) {
+        switch (aux) {
           case 0:
             System.out.print("rojo ");
             break;
@@ -34,10 +35,13 @@ public class Ejercicio18 {
           case 5:
             System.out.print("violeta ");
             break;
+            
         }
+        ++i;
       }
       aux = color;
-      ++i;
+      
+        
     }
   }
 }
