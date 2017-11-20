@@ -1,4 +1,4 @@
-/**Ejercicio17 de Aleatorización
+﻿/**Ejercicio17 de Aleatorización
 *
 *@author Andrés Fernández Nadales
 * 
@@ -23,7 +23,7 @@ public class Ejercicio17 {
       System.out.print("*");
       for (int j = 0; j < anchura - 2; ++j) {
         if ((i == alturaAle)&&(j == anchuraAle)) {
-          System.out.print("&");
+          System.out.print("🐟");
         } else {
           System.out.print(" ");
         }
