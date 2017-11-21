@@ -13,7 +13,7 @@ package proyectonetbeans;
 import java.util.Scanner;
 
 
-public class ProyectoNetBeans {
+public class EjercicioSendero {
 
   
   
