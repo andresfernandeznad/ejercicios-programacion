@@ -31,7 +31,7 @@ public class Ejercicio14 {
     }
     for (int i = 0; i < 8; ++i) {
       x = 0;
-       while (!(palabra[i].equals(colores[x]))&&(x <= 8)) {
+       while (!(palabra[i].equals(colores[x]))&&(x < 9)) {
         ++x;
       }
        
