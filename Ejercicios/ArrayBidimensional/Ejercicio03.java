@@ -8,7 +8,7 @@ package arraybidimensional;
 
 import java.util.Scanner;
 
-public class Ejercicio02 {
+public class Ejercicio03 {
 
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class Ejercicio02 {
     int copia2 = 0;
     for (int i = 0; i < 4; ++i) {
       for (int j = 0; j < 5; ++j) {
-        num [i][j] = s.nextInt();
+        num [i][j] = (int)(Math.random()*900) + 100;
         sumaFila += num [i][j]; 
         System.out.print(num[i][j] + " ");
       }
@@ -28,7 +28,7 @@ public class Ejercicio02 {
       sumaFila = 0;
       System.out.println();
     }
-    
+    System.out.println("---------------------");
     for (int i = 0; i < 5; ++i) {
       for (int j = 0; j < 4; ++j) {
         sumaCol += num [j][i]; 
