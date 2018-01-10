@@ -7,7 +7,7 @@ package funciones;
  */
 
 import java.util.Scanner;
-import matematicas.Matematicas;
+import funciones.matematicas.Matematicas;
 
 public class Ejercicio17 {
 
@@ -19,10 +19,10 @@ public class Ejercicio17 {
     
     int copia = numero;
     int resto = 0;
-    for (int i = 0; i < matematicas.Matematicas.digitos(copia); ++i) {
+    for (int i = 0; i < Matematicas.digitos(copia); ++i) {
       resto = numero % 10;
       
-      suma += ((matematicas.Matematicas.potencia(2, i)) * resto);
+      suma += ((Matematicas.potencia(2, i)) * resto);
       numero /= 10;
     }
     System.out.println("Su número en decimal es: " + suma);
