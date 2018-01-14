@@ -19,7 +19,6 @@ public class Ejercicio19 {
     System.out.println("3.- Hexadecimal.");
     System.out.println("4.- Octal.");
     int tipoOrigen = s.nextInt();
-    int valorFin = 0;
     System.out.print("Introduce el número que quiere cambiar de base: ");
     int numero = s.nextInt();
     System.out.println("Ahora escriba el a que tipo quiere cambiar: ");
@@ -31,25 +30,16 @@ public class Ejercicio19 {
     if (tipoOrigen == 1) {
       switch (tipoFinal) {
         case 1:
-          System.out.print("Su número ya está en decimal.");
+          System.out.println("Su número ya está en decimal.");
           break;
         case 2:
-          System.out.print("Su número en binario es: " + Matematicas.binario(numero));
-
-    
+          System.out.println("Su número en binario es: " + Matematicas.binario(numero));
           break;
         case 3:
-          
+          System.out.println("Su número en hexadecimal es: " + Matematicas.hexadecimal(numero));
           break;
         case 4:
-          int resto = 0;
-          int octal = 0;
-          while (numero > 0) {
-            resto = numero % 8;
-            octal = resto + (octal * 10);
-            numero /= 8;
-          }
-          System.out.println("Su número en octal es: " + Matematicas.voltea(octal));
+          System.out.println("Su número en octal es: " + Matematicas.octal(numero));
           break;
         default:
           System.out.println("Dato incorrecto.");
@@ -59,35 +49,19 @@ public class Ejercicio19 {
     if (tipoOrigen == 2) {
       switch (tipoFinal) {
         case 1:
-          
           System.out.println("Su número en decimal es: " + Matematicas.decimal(numero));
           break;
         case 2:
-          System.out.print("Su número ya está en binario.");
-    
+          System.out.println("Su número ya está en binario.");
           break;
         case 3:
-          
+          numero = Matematicas.decimal(numero);
+          System.out.println("Su número en hexadecimal es: " + Matematicas.hexadecimal(numero));
           break;
         case 4:
-          int suma1 = 0;
-    
-          int copia1 = numero;
-          int resto1 = 0;
-          for (int i = 0; i < Matematicas.digitos(copia1); ++i) {
-            resto1 = numero % 10;
-
-            suma1 += ((Matematicas.potencia(2, i)) * resto1);
-            numero /= 10;
-          }
-          int octal = 0;
-          int resto;
-          while (suma1 > 0) {
-            resto = suma1 % 8;
-            octal = resto + (octal * 10);
-            suma1 /= 8;
-          }
-          System.out.println("Su número en octal es: " + Matematicas.voltea(octal));
+          numero = Matematicas.decimal(numero);
+          numero = Matematicas.octal(numero);
+          System.out.println("Su número en octal es: " + numero);
           break;
         default:
           System.out.println("Dato incorrecto.");
@@ -97,17 +71,18 @@ public class Ejercicio19 {
     if (tipoOrigen == 3) {
       switch (tipoFinal) {
         case 1:
-          
+          System.out.println("Su número en decimal es: " + Matematicas.hexaDec(numero));
           break;
         case 2:
-          
-    
+          numero = Matematicas.hexaDec(numero);
+          System.out.println("Su número en binario es: " + Matematicas.binario(numero));
           break;
         case 3:
           System.out.print("Su número ya está en hexadecimal.");
           break;
         case 4:
-          
+          numero = Matematicas.hexaDec(numero);
+          System.out.println("Su número en octal es: " + Matematicas.octal(numero));
           break;
         default:
           System.out.println("Dato incorrecto.");
@@ -117,14 +92,17 @@ public class Ejercicio19 {
     if (tipoOrigen == 4) {
       switch (tipoFinal) {
         case 1:
-          
+          numero = Matematicas.octalDec(numero);
+          System.out.println("Su número en decimal es: " + numero);
           break;
         case 2:
-          
-    
+          numero = Matematicas.octalDec(numero);
+          numero = Matematicas.binario(numero);
+          System.out.println("Su número en binario es: " + numero);
           break;
         case 3:
-          
+          numero = Matematicas.octalDec(numero);
+          System.out.println("Su número en hexadecimal es: " + Matematicas.hexadecimal(numero));
           break;
         case 4:
           System.out.print("Su número ya está en octal.");
@@ -137,3 +115,4 @@ public class Ejercicio19 {
   }
   
 }
+
