@@ -368,26 +368,21 @@ public class Matematicas {
   public static String hexadecimal(int numero) {
     int resto = 0;
     String [] fin = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F",};
-          String hexadecimal = "";
-          String numeroFinal = "";
-          int i = 0;
-          while (numero > 0) {
-            resto = numero % 16;
-            while (i < resto) {
-              ++i;
-            }
-            hexadecimal += fin[i];
-            numero /= 16;
-            i = 0;
-          }
-          for (int j = hexadecimal.length() - 1; j>=0; --j) {
-            numeroFinal = numeroFinal + hexadecimal.charAt(j);
-          }
-          return numeroFinal;
+    String hexadecimal = "";
+    String numeroFinal = "";
+    int i = 0;
+    while (numero > 0) {
+      resto = numero % 16;
+      while (i < resto) {
+        ++i;
+      }
+      hexadecimal += fin[i];
+      numero /= 16;
+      i = 0;
+    }
+    for (int j = hexadecimal.length() - 1; j>=0; --j) {
+      numeroFinal = numeroFinal + hexadecimal.charAt(j);
+    }
+    return numeroFinal;
   }
 }
-
-
-
-  
-

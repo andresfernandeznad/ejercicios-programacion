@@ -112,7 +112,5 @@ public class Ejercicio19 {
           break;
       }
     }
-  }
-  
+  }  
 }
-
