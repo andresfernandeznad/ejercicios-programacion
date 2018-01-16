@@ -7,6 +7,17 @@ package funciones.array1Dim;
  */
 public class Array1Dim {
   /**
+* Muestra un array
+*
+* @param x un array
+*/
+  public static void mostrarArrayInt (int x []) {
+    for (int i = 0; i < x.length; i++) {
+      System.out.print(x[i] + " ");
+    }
+  }
+  
+  /**
 * Genera un array de tamaño n con números aleatorios
 * cuyo intervalo (mínimo y máximo) se indica como parámetro.
 *
@@ -21,9 +32,7 @@ public class Array1Dim {
     for (int i = 0; i < array.length; ++i) {
       array[i] = (int)(Math.random()*(maximo - minimo)) + minimo;
     }
-    for (int i = 0; i < array.length; ++i) {
-      System.out.print(array[i] + " ");
-    }
+    
     return array;
     
   }
@@ -90,5 +99,105 @@ public class Array1Dim {
       }
     }
     return esta;
+  }
+  
+  /**
+* Busca un número en un array y devuelve la posición
+* (el índice) en la que se encuentra.
+*
+* @param x un array de números enteros
+* @param n un número entero
+* @return Devuelve la posición del número en el array
+*/
+  public static int posicionEnArray (int x [], int n) {
+    int posicion = 0;
+    for (int i = 0; i < x.length; ++i) {
+      if (x[i] == n) {
+        posicion = i;
+      }
+    }
+    return posicion;
+  }
+  
+  /**
+* Le da la vuelta a un array
+*
+* @param x un array de números enteros
+*/
+  public static void volteaArrayInt (int x []) {
+    int [] copia = new int [x.length];
+    int contador = 0;
+    for (int i = x.length - 1; i >= 0; --i) {
+      copia[contador] = x[i];
+      ++contador;
+    }
+    for (int i = 0; i < copia.length; i++) {
+      System.out.print(" " + copia[i]);
+    }
+  }
+  
+  /**
+* Rota n posiciones a la derecha los números de
+* un array.
+*
+* @param x un array de números enteros
+* @param n número de posiciones que rota
+* @return Devuelve el array rotado
+*/
+  public static int [] rotaDerechaArrayInt (int x [], int n) {
+    int [] copia = new int [x.length + 1];
+    int [] auxiliar = new int [x.length + 1];
+    
+    for (int i = 0; i < copia.length - 1; ++i) {
+      copia[i] = x[i];
+    }
+    
+    for (int i = 0; i < n; i++) {
+      
+      for (int j = 0; j < copia.length - 1; j++) {
+        auxiliar[j + 1] = copia[j];                   //Aquí rota el array
+        if (j + 1 == copia.length - 1) {
+          auxiliar[0] = copia[copia.length - 2];
+        }
+      }
+      
+      for (int j = 0; j < copia.length; j++) {
+        copia[j] = auxiliar[j];                       //Aquí se copia para luego al rotar de nuevo no machacar el valor
+      }
+    }
+    
+    return auxiliar;
+  }
+  
+  /**
+* Rota n posiciones a la izquierda los números de
+* un array.
+*
+* @param x un array de números enteros
+* @param n número de posiciones que rota
+* @return Devuelve array rotado
+*/
+  public static int [] rotaIzquierdaArrayInt (int x [], int n) { 
+    int [] copia = new int [x.length + 1];
+    int [] auxiliar = new int [x.length + 1];
+    
+    for (int i = 0; i < copia.length - 1; ++i) {
+      copia[i] = x[i];
+    }
+    
+    for (int i = 0; i < n; i++) {
+      for (int j = copia.length - 2; j >= 0; j--) {
+        if (j - 1 == -1) {
+          auxiliar[auxiliar.length - 2] = copia[0];     //Aquí rota el array
+        } else {
+        auxiliar[j - 1] = copia[j];
+        }
+      }
+      
+      for (int j = 0; j < copia.length; j++) {
+        copia[j] = auxiliar[j];                         //Aquí se copia para luego al rotar de nuevo no machacar el valor
+      }
+    }
+    return auxiliar;
   }
 }
