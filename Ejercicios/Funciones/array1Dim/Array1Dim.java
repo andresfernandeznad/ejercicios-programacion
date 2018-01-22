@@ -6,6 +6,7 @@ package funciones.array1Dim;
  * @author andrésfernándeznadales
  */
 public class Array1Dim {
+  
   /**
 * Muestra un array
 *
