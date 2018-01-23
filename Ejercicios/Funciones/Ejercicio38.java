@@ -1,17 +1,19 @@
 
 package funciones;
 
+
 import java.util.Scanner;
+
+import funciones.array1Dim.Array1Dim;
 
 import funciones.matematicas.Matematicas;
 
-import funciones.array1Dim.Array1Dim;
 
 /**
  *
  * @author andrésfernándeznadales
  */
-public class Ejercicio36 {
+public class Ejercicio38 {
 
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
@@ -24,8 +26,8 @@ public class Ejercicio36 {
     int [] array = Array1Dim.generaArrayInt(tamanyo, minimo, maximo);
     Array1Dim.mostrarArrayInt(array);
     System.out.println();
-    System.out.println("Su array con números primos es: ");
-    Array1Dim.mostrarArrayInt(filtraPrimos(array));
+    System.out.println("Su array con números capicuos es: ");
+    Array1Dim.mostrarArrayInt(filtraCapicuas(array));
   }
   
 
@@ -33,26 +35,25 @@ public class Ejercicio36 {
 //FUNCIONES//
 
 /**
- * Devuelve un array con todos los números primos que
+ * Devuelve un array con todos los números capicúos que
  * se encuentren en otro array
  * 
  * 
- * @param x un array que queremos buscar los números primos
- * @return Devuelve un array formado solo de los números primos del 
- * array pasado de parámetro
+ * @param x array que se pasa como parámetro
+ * @return Devuelve un array sólo formado por los números capicuos
  */
-  public static int[] filtraPrimos(int x[]) {
-    int [] primo = new int [x.length];
+  public static int[] filtraCapicuas(int x[]) {
+    int [] capicua = new int [x.length];
     int contador = 0;
     for (int i = 0; i < x.length; i++) {
-      if (Matematicas.esPrimo(x[i])) {
-        primo[contador] = x[i];
+      if (Matematicas.esCapicua(x[i])) {
+        capicua[contador] = x[i];
         ++contador;
       }
     }
     if (contador == 0) {
-      primo[0] = -1;
+      capicua[0] = -1;
     }
-    return primo;
+    return capicua;
   }
 }

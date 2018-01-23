@@ -37,6 +37,7 @@ public class Array1Dim {
     return array;
     
   }
+  
   /**
 * Devuelve el máximo del array que se pasa como
 * parámetro.

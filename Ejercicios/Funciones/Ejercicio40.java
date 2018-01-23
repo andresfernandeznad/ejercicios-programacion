@@ -3,15 +3,13 @@ package funciones;
 
 import java.util.Scanner;
 
-import funciones.matematicas.Matematicas;
-
 import funciones.array1Dim.Array1Dim;
 
 /**
  *
  * @author andrésfernándeznadales
  */
-public class Ejercicio36 {
+public class Ejercicio40 {
 
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
@@ -24,8 +22,9 @@ public class Ejercicio36 {
     int [] array = Array1Dim.generaArrayInt(tamanyo, minimo, maximo);
     Array1Dim.mostrarArrayInt(array);
     System.out.println();
-    System.out.println("Su array con números primos es: ");
-    Array1Dim.mostrarArrayInt(filtraPrimos(array));
+    System.out.println("Su array de sietes es: ");
+    Array1Dim.mostrarArrayInt(filtraCon7(array));
+    
   }
   
 
@@ -33,26 +32,34 @@ public class Ejercicio36 {
 //FUNCIONES//
 
 /**
- * Devuelve un array con todos los números primos que
- * se encuentren en otro array
+ * Devuelve un array con todos los números que contengan un siete
  * 
  * 
- * @param x un array que queremos buscar los números primos
- * @return Devuelve un array formado solo de los números primos del 
- * array pasado de parámetro
+ * @param x un array de números enteros
+ * @return Devuelve un array con números que tienen 7
  */
-  public static int[] filtraPrimos(int x[]) {
-    int [] primo = new int [x.length];
+  public static int[] filtraCon7(int x[]) {
+    int [] siete = new int [x.length];
+    boolean aparece = false;
     int contador = 0;
+    int resto = 0;
     for (int i = 0; i < x.length; i++) {
-      if (Matematicas.esPrimo(x[i])) {
-        primo[contador] = x[i];
+      resto = x[i];
+      while (resto > 0) {
+        if (resto%10 == 7) {
+          aparece = true;
+        }
+        resto /= 10;
+      }
+      if (aparece) {
+        siete[contador] = x[i];
         ++contador;
       }
+      aparece = false;
     }
     if (contador == 0) {
-      primo[0] = -1;
+      siete[0] = -1;
     }
-    return primo;
+    return siete;
   }
 }
