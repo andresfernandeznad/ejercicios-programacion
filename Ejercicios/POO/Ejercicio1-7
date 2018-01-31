@@ -1,0 +1,26 @@
+1.- Por ejemplo, edad, nacionalidad, palmarés, años compitiendo, altura, peso, escudería.
+pilotoRenault, pilotoFerrari...
+
+2.- Clase
+	perro	goofy, snoopy, pluto, ayudante_de_santa_claus, laika
+	mineral	pirita, cuarzo
+	caballo	silvestre, rocinante, bucefalo, pegaso
+	gato	gardfiel, milu,
+
+	Estas dos predominan sobre el resto, son más generales
+	animal	perro, gato, caballo, pato_lucas
+	persona	paula, tom, javier
+
+3.- Año de construccion, habitantes, número de habitaciones, dimensiones...
+	Por ejemplo Piso, Chalet, Atico...
+
+4.- Equipos, Arbitros, Afición, Estadios y animadoras.
+
+5.- pelaje, raza, edad, comidafavorita, lugar de nac...
+	saltar, sprintar, comer, beber...
+
+6.- Depende de si Alumno es una subclase de la clase Persona y de esta tenemos un atributo llamado nombre, si no tenemos la clase persona si podría ser un atributo
+de alumno.
+
+7.- anchura, altura, estado
+	Cerrar, abrir inspector, minimizar, maximizar, restaurar, buscar, volver...
