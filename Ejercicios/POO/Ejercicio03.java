@@ -17,10 +17,12 @@ public class Ejercicio03 {
     Pinguino pingu = new Pinguino();
     Canario canari = new Canario();
     Lagarto sneik = new Lagarto();
+    canari.setNombre("Canari");
     
     sneik.setNombre("Sneik");
     System.out.println("Ven " + sneik.getNombre());
     sneik.camina();
+    sneik.cazar(canari);
     
     garfield.setNombre("Garfield");
     System.out.println("Ven " + garfield.getNombre());
@@ -32,10 +34,13 @@ public class Ejercicio03 {
     System.out.println("Pipo pelea con Popi!");
     pipo.morder(popi);
     
-    canari.setNombre("Canari");
+    
     System.out.println("Vuela " + canari.getNombre());
+    canari.cantar();
     canari.volar();
     pingu.setNombre("Pingu");
+    System.out.println("Ven " + pingu.getNombre() + " intenta volar: ");
+    pingu.resbalar();
     System.out.println("Vuela " + pingu.getNombre());
     pingu.volar();
   }

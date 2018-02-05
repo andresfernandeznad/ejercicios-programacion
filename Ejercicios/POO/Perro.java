@@ -21,4 +21,11 @@ public class Perro extends Mamifero {
       System.out.println(this.getNombre() + " no muerde.");
     }
   }
+  
+  /**
+   * Recoger la pelota
+   */
+  void irPelota() {
+    System.out.println(this.getNombre() + " coge la pelota.");
+  }
 }

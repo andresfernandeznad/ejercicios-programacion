@@ -15,5 +15,14 @@ public class Pinguino extends Ave {
     System.out.println("No se volar :(");
   }
   
+  /**
+   * El pinguino baila.
+   */
+  void bailar() {
+    System.out.println("Este pinguino baila.");
+  }
   
+  void resbalar() {
+    System.out.println("El pinguino se resbala.");
+  }
 }

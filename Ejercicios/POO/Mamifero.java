@@ -17,4 +17,8 @@ public abstract class Mamifero extends Animal {
   void amamantar() {
     System.out.println("Este animal amamanta.");
   }
+  
+  void cuidarCrias() {
+    System.out.println("Este animal cuida de sus crías.");
+  }
 }
