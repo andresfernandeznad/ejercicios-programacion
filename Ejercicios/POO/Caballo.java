@@ -83,4 +83,31 @@ public class Caballo {
     }
     
   }
+  
+  @Override
+  public String toString() {
+    String resultado = "*******";
+    resultado += "\n";
+    for (int i = 0; i < 1; i++) {
+      resultado += ("*     *");
+      resultado += "\n";
+    }
+    resultado += "* * * *";
+    return resultado;
+  }
+  
+  /**
+   * Dos caballos se aparean
+   * @param cab1
+   * @return 
+   */
+  public Caballo aparearseCon(Caballo cab1) {
+    if(this.sexo.equals(cab1.sexo)) {
+      System.out.println("No podemos aparearnos, somos del mismo sexo.");
+      return null;
+    } else {
+      Caballo cria = new Caballo();
+      return cria;
+    }
+  } 
 }

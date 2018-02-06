@@ -14,10 +14,12 @@ public class Ejercicio03 {
     Gato garfield = new Gato();
     Perro pipo = new Perro();
     Perro popi = new Perro();
+    Perro tobi = new Perro("Tobi", "hembra", 5);
     Pinguino pingu = new Pinguino();
     Canario canari = new Canario();
     Lagarto sneik = new Lagarto();
     canari.setNombre("Canari");
+    
     
     sneik.setNombre("Sneik");
     System.out.println("Ven " + sneik.getNombre());
@@ -33,6 +35,8 @@ public class Ejercicio03 {
     popi.setNombre("Popi");
     System.out.println("Pipo pelea con Popi!");
     pipo.morder(popi);
+    System.out.println("Popi pelea con Tobi!");
+    popi.morder(tobi);
     
     
     System.out.println("Vuela " + canari.getNombre());

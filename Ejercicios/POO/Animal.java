@@ -8,9 +8,9 @@ package poo;
 public abstract class Animal {
   //ATRIBUTOS////////////////////////////////
   
-  private String nombre, sexo;
+  protected String nombre, sexo;
   private double peso;
-  private int edad;
+  protected int edad;
   
   //METODOS////////////////////////////////
   

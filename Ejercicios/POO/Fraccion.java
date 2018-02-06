@@ -32,6 +32,15 @@ public class Fraccion {
   }
   
   /**
+   * Este método pinta x fracción
+   */
+  void pintar() {
+    System.out.println(this.numerador);
+    System.out.println("━━━");
+    System.out.println(this.denominador);
+  }
+  
+  /**
    * Este método invierte
    */
   void invertir(int numerador,int denominador) {

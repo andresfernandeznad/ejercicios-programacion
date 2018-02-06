@@ -23,6 +23,10 @@ public class Ejercicio04 {
     fraccion02.setNumerador(s.nextInt());
     System.out.print("Introduce su denominador: ");
     fraccion02.setDenominador(s.nextInt());
+    System.out.println("Su primera fracción es: ");
+    fraccion01.pintar();
+    System.out.println("Su segunda fracción es: ");
+    fraccion02.pintar();
     
     System.out.println("Su primera fracción inversa es: ");
     fraccion01.invertir(fraccion01.getNumerador(), fraccion01.getDenominador());
@@ -39,5 +43,6 @@ public class Ejercicio04 {
     
     fraccion01.divide(fraccion02);
   }
+
   
 }
