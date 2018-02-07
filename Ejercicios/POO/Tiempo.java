@@ -22,7 +22,7 @@ public class Tiempo {
   @Override
   public String toString() {
     String resultado = "";
-    resultado += ("" + this.horas + "h " + this.minutos + "m " + this.segundos + "s.");
+    resultado += ("" + this.horas + "h " + this.minutos + "m " + this.segundos + "s");
     return resultado;
   }
   
